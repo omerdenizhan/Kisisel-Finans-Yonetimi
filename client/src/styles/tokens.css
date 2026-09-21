@@ -1,0 +1,166 @@
+/* ============================================================
+   Tasarım token'ları — Tailwind + raw CSS değişkenleri
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #f8fafc;
+  --bg-grad-from: #eef2ff;
+  --bg-grad-via: #ffffff;
+  --bg-grad-to: #ecfeff;
+
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-bg-strong: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-divider: rgba(15, 23, 42, 0.08);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --color-income: #10b981;
+  --color-expense: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #6366f1;
+
+  --shadow-glass:
+    0 8px 32px 0 rgba(31, 38, 135, 0.12),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45);
+
+  --ring-focus: 0 0 0 3px rgba(99, 102, 241, 0.45);
+}
+
+.dark {
+  --bg-base: #0b1120;
+  --bg-grad-from: #0b1120;
+  --bg-grad-via: #1e1b4b;
+  --bg-grad-to: #0b1120;
+
+  --glass-bg: rgba(30, 41, 59, 0.4);
+  --glass-bg-strong: rgba(30, 41, 59, 0.6);
+  --glass-border: rgba(148, 163, 184, 0.18);
+  --glass-divider: rgba(148, 163, 184, 0.12);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+
+  --shadow-glass:
+    0 8px 32px 0 rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+#root {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, var(--bg-grad-from), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, var(--bg-grad-to), transparent 60%),
+    linear-gradient(180deg, var(--bg-grad-from), var(--bg-grad-via) 40%, var(--bg-grad-to));
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   Glassmorphism primitive'leri
+   ============================================================ */
+@layer components {
+  .glass {
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-strong {
+    background-color: var(--glass-bg-strong);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-divider {
+    border-color: var(--glass-divider);
+  }
+
+  .focus-ring {
+    outline: none;
+  }
+  .focus-ring:focus-visible {
+    box-shadow: var(--ring-focus);
+    border-radius: 0.75rem;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-all duration-200 ease-out focus-ring disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white shadow-glow hover:bg-brand-500 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply btn glass hover:scale-[1.02] active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply btn text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800;
+  }
+  .btn-danger {
+    @apply btn bg-rose-600 text-white hover:bg-rose-500 active:scale-[0.98];
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-slate-200/60 bg-white/60 px-3 py-2 text-sm text-slate-900 placeholder-slate-400 shadow-sm outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-200 dark:border-slate-700/50 dark:bg-slate-900/40 dark:text-slate-100 dark:placeholder-slate-500 dark:focus:ring-brand-900/40;
+  }
+
+  .card-title {
+    @apply text-sm font-medium text-slate-500 dark:text-slate-400;
+  }
+
+  .label {
+    @apply mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500 dark:text-slate-400;
+  }
+}
+
+/* Erişilebilirlik: hareket azaltma */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.45);
+}
