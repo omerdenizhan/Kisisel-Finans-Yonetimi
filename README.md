@@ -12,14 +12,14 @@ Modern UI, dark mode, glassmorphism görünüm, güvenli oturum yönetimi ve yer
 
 Uygulama, aşağıdaki iş akışlarını tek bir yerel arayüzde yönetmeyi hedefler:
 
-- gelir ve gider takibi
-- aylık bütçe kontrolü
-- taksit yönetimi
-- tekrarlayan işlemler
-- hedef birikimi takibi
-- ödemeler ve hatırlatıcılar
-- rapor ve dışa aktarma
-- veritabanı yedekleme / geri yükleme
+- Gelir ve gider takibi
+- Aylık bütçe kontrolü
+- Taksit yönetimi
+- Tekrarlayan işlemler
+- Hedef birikimi takibi
+- Ödemeler ve hatırlatıcılar
+- Rapor ve dışa aktarma
+- Veritabanı yedekleme / geri yükleme
 
 Yapılandırma olarak tek kullanıcı, tek veritabanı ve yerel oturum modeli kullanılır. Server tarafı lokal SQLite üzerinde çalışır; frontend ise Vite üzerinden geliştirilmektedir.
 
@@ -29,74 +29,74 @@ Yapılandırma olarak tek kullanıcı, tek veritabanı ve yerel oturum modeli ku
 
 ### 1. Dashboard
 
-- mevcut ay gelir, gider ve net değer kartları
-- aylık toplam görünümü
-- son işlemler listesi
-- yaklaşılan taksitler ve hatırlatıcılar
+- Mevcut ay gelir, gider ve net değer kartları
+- Aylık toplam görünümü
+- Son işlemler listesi
+- Yaklaşılan taksitler ve hatırlatıcılar
 - Recharts ile gelir/gider ve kategori görselleri
-- mobil ve masaüstü uyumlu düzen
+- Mobil ve masaüstü uyumlu düzen
 
 ### 2. İşlem Yönetimi
 
-- gelir ve gider kayıtları
-- kategori bazlı ayrım
-- tarih, tutar, arama ve filtreleme desteği
-- işlemlerin düzenlenmesi ve silinmesi
-- net toplam hesaplama
+- Gelir ve gider kayıtları
+- Kategori bazlı ayrım
+- Tarih, tutar, arama ve filtreleme desteği
+- İşlemlerin düzenlenmesi ve silinmesi
+- Net toplam hesaplama
 
 ### 3. Taksit Sistemi
 
-- birden fazla taksitin aylık plan otomasyonu
-- toplam tutar ve taksit sayısı ile otomatik ödeme takvimi üretimi
-- ödeme / ödeme geri alma akışı
-- taksit ödeme durumları
-- son tarih geçmiş ödeme işaretleme
+- Birden fazla taksitin aylık plan otomasyonu
+- Toplam tutar ve taksit sayısı ile otomatik ödeme takvimi üretimi
+- Ödeme / ödeme geri alma akışı
+- Taksit ödeme durumları
+- Son tarih geçmiş ödeme işaretleme
 
 ### 4. Tekrarlayan İşlemler
 
-- günlük, haftalık, aylık ve yıllık tekrarlar
-- otomatik oluşan işlemler
-- manuel çalıştırma düğmesi
-- bitiş tarihi ve pasifleştirme desteği
+- Günlük, haftalık, aylık ve yıllık tekrarlar
+- Otomatik oluşan işlemler
+- Manuel çalıştırma düğmesi
+- Bitiş tarihi ve pasifleştirme desteği
 
 ### 5. Bütçeler
 
-- kategori bazlı aylık bütçe takibi
-- harcanan / kalan / kullanım yüzdesi
-- aşım görünümü ve uyarı durumu
+- Kategori bazlı aylık bütçe takibi
+- Harcanan / kalan / kullanım yüzdesi
+- Aşım görünümü ve uyarı durumu
 
 ### 6. Hedefler
 
-- hedef tutar ve mevcut birikim takibi
-- ilerleme yüzdesi
-- hedef tarihi ve tamamlanma durumu
+- Hedef tutar ve mevcut birikim takibi
+- İlerleme yüzdesi
+- Hedef tarihi ve tamamlanma durumu
 
 ### 7. Hatırlatıcılar
 
-- faturalar, görevler ve ödemeler için listeleme
-- tamamlandı / gecikmiş işaretleme
-- tarih bazlı görünüm
+- Faturalar, görevler ve ödemeler için listeleme
+- Tamamlandı / gecikmiş işaretleme
+- Tarih bazlı görünüm
 
 ### 8. Raporlar
 
-- aylık raporlar
-- yıllık raporlar
-- kategori bazlı dağılım
-- gelir-gider karşılaştırması
+- Aylık raporlar
+- Yıllık raporlar
+- Kategori bazlı dağılım
+- Gelir-gider karşılaştırması
 
 ### 9. Dışa Aktarma
 
 - PDF export
 - Excel export
-- rapor ve işlem sayfaları için dosya çıktısı
+- Rapor ve işlem sayfaları için dosya çıktısı
 
 ### 10. Ayarlar ve Yönetim
 
-- kategori ekleme, düzenleme ve arşivleme
-- tema değiştirme (aydınlık / karanlık)
-- veritabanı yedeği indir
-- veritabanı geri yükleme
-- güvenli oturum desteği
+- Kategori ekleme, düzenleme ve arşivleme
+- Tema değiştirme (aydınlık / karanlık)
+- Veritabanı yedeği indir
+- Veritabanı geri yükleme
+- Güvenli oturum desteği
 
 ---
 
