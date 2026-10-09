@@ -19,7 +19,7 @@ Uygulama, aşağıdaki iş akışlarını tek bir yerel arayüzde yönetmeyi hed
 
 Yapılandırma olarak tek kullanıcı, tek veritabanı ve yerel oturum modeli kullanılır. Server tarafı lokal SQLite üzerinde çalışır; frontend ise Vite üzerinden geliştirilmektedir.
 
-## Temel Özellikler
+## 📌 Temel Özellikler
 
 ### 1. Dashboard
 - Mevcut ay gelir, gider ve net değer kartları
@@ -82,7 +82,7 @@ Yapılandırma olarak tek kullanıcı, tek veritabanı ve yerel oturum modeli ku
 - Veritabanı geri yükleme
 - Güvenli oturum desteği
 
-## Teknoloji Yığını
+## 📌 Teknoloji Yığını
 | Katman | Teknoloji |
 | --- | --- |
 | Frontend | React 18, TypeScript |
@@ -99,7 +99,7 @@ Yapılandırma olarak tek kullanıcı, tek veritabanı ve yerel oturum modeli ku
 | Excel | ExcelJS |
 | Tarih işlemleri | date-fns |
 
-## Proje Yapısı
+## 📌 Proje Yapısı
 ```text
 KisiselFinans/
 ├── package.json                  # kök scriptler, concurrently
@@ -146,14 +146,14 @@ Ana başlıklar şunlardır:
 - `server/src/services`: iş mantığı ve hesaplamalar
 - `server/src/db`: veritabanı bağlantısı, şema, seed, migrasyon
 
-## Çalıştırma Ön Koşulları
+## 📌 Çalıştırma Ön Koşulları
 Geliştirme ortamı için minimum gereksinim:
 - Node.js 20+
 - npm
 - Windows/macOS/Linux
 Sunucu tarafında `better-sqlite3` derlemesi yapıldığı için yerel sistemde C++ derleyici veya uygun build araçları mevcut olmalıdır. Windows üzerinde çoğu durumda Node 20 + Visual Studio Build Tools veya benzeri araçlar yeterlidir.
 
-## Kurulum
+## 📌 Kurulum
 
 Kök dizinde aşağıdaki komutları çalıştırın:
 
@@ -184,7 +184,7 @@ Varsayılan adresler:
 - Frontend: http://localhost:5173
 - API: http://localhost:3000
 
-## Üretim Build
+## 📌 Üretim Build
 ```bash
 npm run build
 ```
@@ -222,7 +222,7 @@ NODE_ENV=development
 server/data/finance.db
 ```
 
-## API Genel Bakış
+## 📌 API Genel Bakış
 API rotaları `/api` altında gelir. Bazı ana uç noktalar şunlardır:
 | Method | Endpoint | Açıklama |
 | --- | --- | --- |
@@ -249,7 +249,7 @@ API rotaları `/api` altında gelir. Bazı ana uç noktalar şunlardır:
 
 Önemli not: tüm korumalı rotalar `requireAuth` middleware ile korunur. Client tarafında token `localStorage` içinde saklanır.
 
-## Veritabanı Yapısı
+## 📌 Veritabanı Yapısı
 SQLite veritabanı, `server/src/db/schema.sql` üzerinde tanımlıdır. Ana tablolar şunlardır:
 - `categories`
 - `transactions`
@@ -276,7 +276,7 @@ Uygulama, belirli bir kullanıcıya özel yerel oturum modeli kullanır:
 
 Bu yapı, tek kullanıcı ve yerel kullanım için uygun bir güvenlik yaklaşımıdır.
 
-## UI ve Tasarım Notları
+## 📌UI ve Tasarım Notları
 - glassmorphism benzeri kartlar ve arka plan efekti
 - karanlık / aydınlık tema
 - responsive tasarım
@@ -284,7 +284,7 @@ Bu yapı, tek kullanıcı ve yerel kullanım için uygun bir güvenlik yaklaşı
 - lucide-react ikonları
 - Recharts grafikler ve Framer Motion animasyonlar
 
-## Örnek Geliştirme Akışı
+## 📌 Örnek Geliştirme Akışı
 1. `npm run dev` ile uygulamayı başlat
 2. `admin@admin.com` ile giriş yap
 3. kategorileri yönet
@@ -295,7 +295,7 @@ Bu yapı, tek kullanıcı ve yerel kullanım için uygun bir güvenlik yaklaşı
 8. raporları kontrol et
 9. yedek alma / geri yükleme işlemlerini kullan
 
-## Sorun Giderme
+## 📌 Sorun Giderme
 ### `better-sqlite3` derleme hatası
 Node sürümüne göre uygun derleyici / build araçları kurulu olmalıdır. Windows için Visual Studio C++ araçları veya benzeri gereksinimler kontrol edilmelidir.
 ### Veritabanı oluşmuyor
@@ -313,13 +313,13 @@ Aşağıdaki komutları sırayla kontrol edin:
 npm --prefix client run build
 npm --prefix server run build
 ```
-## Geliştirme Notları
+## 📌 Geliştirme Notları
 - Frontend tarafında lazy loading uygulanmıştır.
 - Üretim build sonrası API static frontend sunabilir.
 - Birden fazla sayfa tek istekle yüklenecek şekilde code splitting kullanılmıştır.
 - Veritabanı işlemleri doğrudan SQLite üzerine yazılır; çevrimiçi servis gerektirmez.
 
-## Kısa Özet
+## 📌 Kısa Özet
 Bu uygulama, kişisel finans yönetimini tek bir yerel sistem üzerinden yönetmek için tasarlanmıştır. Kullanıcılar gelir-gider, bütçe, taksit, hedef, hatırlatıcı ve rapor akışlarını tek arayüzden yönetebilir. SQLite ile hafif ve hızlı çalışan arka plan, React ile modern bir kullanıcı deneyimi sunar.
 
 ## 📄 Lisans
