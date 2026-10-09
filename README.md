@@ -6,7 +6,7 @@ Modern UI, dark mode, glassmorphism görünüm, güvenli oturum yönetimi ve yer
 
 ![React](https://img.shields.io/badge/React-18-61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6) ![Vite](https://img.shields.io/badge/Vite-5-646CFF) ![Tailwind](https://img.shields.io/badge/Tailwind-3-38BDF8) ![Node](https://img.shields.io/badge/Node-20-339933) ![SQLite](https://img.shields.io/badge/SQLite-3-003B57)
 
-## Proje Hakkında
+## 📌 Proje Hakkında
 Uygulama, aşağıdaki iş akışlarını tek bir yerel arayüzde yönetmeyi hedefler:
 - Gelir ve gider takibi
 - Aylık bütçe kontrolü
