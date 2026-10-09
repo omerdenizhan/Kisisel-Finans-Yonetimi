@@ -83,7 +83,6 @@ Yapılandırma olarak tek kullanıcı, tek veritabanı ve yerel oturum modeli ku
 - Güvenli oturum desteği
 
 ## Teknoloji Yığını
-
 | Katman | Teknoloji |
 | --- | --- |
 | Frontend | React 18, TypeScript |
@@ -170,8 +169,6 @@ Alternatif olarak tek komutla:
 npm run install:all
 ```
 
----
-
 ## Geliştirme Modunda Çalıştırma
 Kök dizinde:
 
@@ -224,8 +221,6 @@ NODE_ENV=development
 ```text
 server/data/finance.db
 ```
-
----
 
 ## API Genel Bakış
 API rotaları `/api` altında gelir. Bazı ana uç noktalar şunlardır:
