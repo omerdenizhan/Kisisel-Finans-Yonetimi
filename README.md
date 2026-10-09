@@ -169,7 +169,7 @@ Alternatif olarak tek komutla:
 npm run install:all
 ```
 
-## Geliştirme Modunda Çalıştırma
+## 📌 Geliştirme Modunda Çalıştırma
 Kök dizinde:
 
 ```bash
@@ -201,14 +201,14 @@ npm start
 
 Uygulama, backend üzerinde hem API hem de SPA sunumunu aynı anda servis eder.
 
-## Varsayılan Hesap Bilgileri
+## 📌 Varsayılan Hesap Bilgileri
 Uygulama ilk çalıştırmada otomatik olarak bir yönetici kullanıcısı oluşturur:
 - e-posta: `admin@admin.com`
 - parola: `12345678`
 
 Bu bilgiler `server/src/db/seed.ts` içinde tanımlanmıştır. Geliştirme ortamında güvenlik için sonra değiştirilmesi önerilir.
 
-## Ortam Değişkenleri
+## 📌 Ortam Değişkenleri
 Proje doğrudan `.env` dosyası kullanmaz; bazı ayarlar `process.env` üzerinden okunur. Örnek kullanım:
 ```bash
 PORT=3000
@@ -276,7 +276,7 @@ Uygulama, belirli bir kullanıcıya özel yerel oturum modeli kullanır:
 
 Bu yapı, tek kullanıcı ve yerel kullanım için uygun bir güvenlik yaklaşımıdır.
 
-## 📌UI ve Tasarım Notları
+## 📌 UI ve Tasarım Notları
 - glassmorphism benzeri kartlar ve arka plan efekti
 - karanlık / aydınlık tema
 - responsive tasarım
