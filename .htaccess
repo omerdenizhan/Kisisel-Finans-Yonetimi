@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^localhost$ [NC]
+    RewriteRule ^(.*)$ http://localhost:5173/KisiselFinans [R=301,L]
+</IfModule>
