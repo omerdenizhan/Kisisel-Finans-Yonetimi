@@ -1,4 +1,4 @@
-# Kişisel Finans Yönetimi
+<h1 align="center">⭐ Kişisel Finans Yönetimi ⭐</h1>
 
 Bu proje, tek kullanıcıya özel çalışacak şekilde tasarlanmış yerel bir kişisel finans takip uygulamasıdır. React + TypeScript frontend, Express + SQLite backend ve güçlü bir bütçe / tahsilat / taksit / rapor akışı sunar.
 
