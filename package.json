@@ -1,6 +1,6 @@
 {
-  "name": "yerel-finance",
-  "version": "0.1.0",
+  "name": "kisisel-finans-yonetimi",
+  "version": "1.0.8",
   "private": true,
   "description": "Kişisel Finans Yönetimi",
   "scripts": {
