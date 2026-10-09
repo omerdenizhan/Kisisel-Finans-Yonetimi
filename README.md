@@ -401,12 +401,23 @@ npm --prefix server run build
 
 ---
 
-## Lisans
-
-Bu proje için özel kullanım ve geliştirme amaçlı lisans uygulanmaktadır. Daha net bir lisans gereksinimi varsa repository sahibi tarafından belirtilebilir.
-
----
-
 ## Kısa Özet
 
 Bu uygulama, kişisel finans yönetimini tek bir yerel sistem üzerinden yönetmek için tasarlanmıştır. Kullanıcılar gelir-gider, bütçe, taksit, hedef, hatırlatıcı ve rapor akışlarını tek arayüzden yönetebilir. SQLite ile hafif ve hızlı çalışan arka plan, React ile modern bir kullanıcı deneyimi sunar.
+
+---
+
+## 📄 Lisans
+
+Bu proje [Unlicense](https://unlicense.org/) ile kamu malı olarak sunulmuştur; dilediğiniz gibi kullanabilir, değiştirebilir ve dağıtabilirsiniz. Ayrıntılar için [`LICENSE`](LICENSE) dosyasına bakın.
+
+---
+
+## 🕰️ Son Güncelleme
+09 Ekim 2026
+
+---
+
+<p align="center">❤️ Made with Love ❤️</p>
+
+---
