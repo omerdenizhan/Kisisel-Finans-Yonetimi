@@ -266,7 +266,7 @@ SQLite veritabanı, `server/src/db/schema.sql` üzerinde tanımlıdır. Ana tabl
 
 Veritabanı bağlantısı `server/src/db/connection.ts` içinde tek bir singleton şekilde tutulur. WAL modu açılır ve foreign keys etkinleştirilir.
 
-## Güvenlik ve Kimlik Doğrulama
+## 📌 Güvenlik ve Kimlik Doğrulama
 Uygulama, belirli bir kullanıcıya özel yerel oturum modeli kullanır:
 - kullanıcılar `users` tablosunda saklanır
 - parola `hashPassword` ile özetlenir
