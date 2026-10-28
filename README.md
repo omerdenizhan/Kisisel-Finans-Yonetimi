@@ -336,7 +336,7 @@ Bu uygulama, kişisel finans yönetimini tek bir yerel sistem üzerinden yönetm
 Bu proje [Unlicense](https://unlicense.org/) ile kamu malı olarak sunulmuştur; dilediğiniz gibi kullanabilir, değiştirebilir ve dağıtabilirsiniz. Ayrıntılar için [`LICENSE`](LICENSE) dosyasına bakın.
 
 ## 🕰️ Son Güncelleme
-22 Ekim 2026
+28 Ekim 2026
 
 ---
 
